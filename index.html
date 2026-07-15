@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!--下記 meta:nameはgoogleの概要蘭に記載する分を認識させる為のもの。 contentは記入したい内容（作成したサイト内容など）--> 
+    <meta name="description" content="テキストテキストテキストテキスト">
+    <!--/*---------------------------------------------------------------------------------------------------------->
+    <!--下記コードはmedia（スマホ版などのサイト幅が変わったときに適用させるコード）を記載するために必要なコード。※これがないとスマホで見たときにサイト崩れが発生する恐れ有。-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--/*------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <title>Mag88</title>
+    <link rel="icon" href="img/favicon.ico">
+    <style>
+      img{max-width:100%;}
+      header{background-image: url("img/mainvisual.jpg");background-repeat:no-repeat;background-size:cover;background-position:center;height:100vh;}
+      header img{width: 150px;height:auto;}
+      #mainlogo{float:right;margin:35px;}
+      .maintext1{display:flex;flex-direction:column;justify-content:center;align-items:center;width:100%;}
+      .maincontent{font-weight: 300;font-size:18px;width:550px;margin-bottom:50px;}
+      .maincentertitle{font-size:30px;margin:70px 15px 0 15px;}
+      main{display:flex;align-items:center;flex-direction:column;text-align:center;}
+      .main-content{display:flex;}
+      .Archive{position:relative;padding-right:20px;margin-left:40px;}
+      .New{position:relative;margin-right:40px;}
+      
+      .main-text{padding-top:0;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background-color:rgba(0,0,0,0.5);color:white;width:300px;}
+      .main-text h2{height:1px;line-height:0.5;}
+      .main-picture{width:600px;height:auto;}
+      
+      #Fashion-Style{width:100%;height:550px;background-image: url("img/fashion.jpg");background-size: cover;background-position: center;background-repeat: no-repeat;position: relative;margin-top: 80px;}
+      .Fashion-Styletext{position:absolute;top:25%;left:50%;transform:translate(-50%,-50%);}
+      .Fashion-Stylea{line-height:0.5;padding:1px 31px;font-size:15px;border:1px solid #2a2a2a;display:inline-block;text-decoration:none;color:black;}   
+      .Fashion-Styletext h2{font-size:28px;}
+      .Fashion-Styletext-p{font-size:17px;width:750px;}
+
+      .main-Catalog{margin-bottom:100px;display:flex;justify-content:center;align-items:center;margin-top:70px;}
+      .main-Antique{display:flex;}
+      .main-Catalog img{width:500px;height:500px;}
+      .Catalog{width:410px;height:410px;margin-left:40px;}
+      .Catalog-p{text-align:left;font-size:15px;font-weight: 300;padding-top:15px;}
+      .Antique-text{display:flex;justify-content:center;align-items:center;flex-direction:column;width:410px;height:410px;margin-right:40px;}
+      .main-Antique img{width:500px;height:500px;}
+      .Antique-a{margin-top:20px;border:1px solid #2a2a2a;display:inline-block;text-decoration:none;color:black;padding:15px 31px;font-size:12px;line-height:1.0;}
+      .Antique-p{text-align:left;font-size:15px;font-weight: 300;padding-top:15px;}
+      
+
+      footer{background-color:#333;height:450px;display:flex;align-items:center;justify-content:center;color:white;gap:150px;margin-top:50px;}
+      .footer-logo{width:150px;height:auto;margin-left:50px;}
+      .footer-title ul{list-style:none;padding-left:0;}
+      .footer-title li::before{content:"- "}
+      .footer-subtitle{width:450px;margin-right:50px;}
+      #footer-logo{display:flex;justify-content:center;height:80px;align-items:center;font-size:16px;}
+
+    @media(max-width:896px){
+      .main-content{flex-direction:column;gap:10px;}
+      #Fashion-Style{margin-top:40px;width:100%;}
+      .Fashion-Styletext{width:100%;padding:0 20px;box-sizing:border-box;}
+      .Fashion-Styletext-p{width:100%;margin:0;box-sizing:border-box;}
+      .Fashion-Stylea{margin-top:40px;}
+      .Archive,.New{margin:0;padding:20px;}
+      .main-picture{text-align:center;width:100%;}
+      
+      .main-text2{width:100%;padding:0 20px;box-sizing:border-box;}
+      .main-Catalog,.main-Antique{width:100%;flex-direction:column;align-items:center;}
+      .main-Antique img{width:100%;max-width:none;height:auto;margin:0;}
+      .main-Catalog img{width:100%;max-width:none;height:auto;margin:0 0 25px 0;}
+      .Catalog-p,.Antique-p{width:100%;}
+      .Antique-text{margin:27px 20px 0 20px;width:100%;height:auto;}
+      .Catalog{margin:0 20px 0 20px;width:100%;height:auto;}
+      .main-Catalog{margin-bottom:10px;}
+      .Catalog h2{margin-top:50px;}
+      .Antique-a{margin-bottom:50px;}
+      footer{display:flex;flex-direction:column;margin:0;padding:0;height:auto;gap:0;width:100%;max-width:896px;}
+      .footer-title{float:left;width:100%;margin:0 0 0 60px;}
+      .footer-subtitle{float:left;width:100%;margin:11px 0 0 60px;}
+      .footer-subtitle p{margin-right:60px;margin-bottom:65px;}
+      .footer-logo{margin-top:36px;margin-bottom:35px;}
+      .footer-title h2,.footer-subtitle h2{font-size:20px;}
+    }
+
+    </style>
+  </head>
+  <body>
+    <header>      
+      <img ID="mainlogo" src="img/logo.svg" alt="ロゴ画像">
+    </header>
+    <main>
+      <section >
+        <div class="maintext1">
+        <h2 class="maincentertitle">A special, long article in a newspaper or magazine</h2>
+        <p class="maincontent">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </div>
+        <div class="main-content">
+          <div class="Archive">
+            <a class="Archive-a" href="#">
+              <img src="img/magazine-archive.jpg" alt="アーカイブ画像" class="main-picture" id="Archive-picture">
+              <div class="main-text">
+                <h2>Archive</h2>
+                <p>テキストテキストテキストテキスト<br>
+                 テキストテキストテキスト</p>
+              </div>
+            </a>
+          </div>
+          <div class="New">
+            <a class="New-a" href="#">
+              <img src="img/magazine-new.jpg" alt="ニュー画像" class="main-picture" id="New-picture">
+              <div class="main-text">
+                <h2>New</h2>
+                <p>テキストテキストテキストテキスト<br>
+                 テキストテキストテキスト</p>
+              </div>
+            </a>
+          </div>
+         </div>
+      </section>
+      <section id="Fashion-Style">              
+        <div class="Fashion-Styletext">
+          <h2>Fashion & Style</h2>
+          <p class="Fashion-Styletext-p">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+             テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          <a class="Fashion-Stylea" href="#"><p>Read More</p></a>   
+        </div>     
+      </section>
+      <section class="main-text2">
+        <div class="main-Catalog">
+          <img src="img/catalog.jpg" alt="カタログ画像">
+          <div class="Catalog">
+            <h2 >Catalog</h2>
+            <p class="Catalog-p">テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="Catalog-p">テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="Catalog-p">テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </div>
+        </div>
+        <div class="main-Antique">
+          <div class="Antique-text">
+            <h2 class="Antique">Antique</h2>
+            <p class="Antique-p">テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="Antique-p">テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <a class="Antique-a" href="#">Read More</a>
+          </div>
+          <img src="img/antique.jpg" alt="アンティーク画像">
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="item">
+        <a href="#"><img src="img/logo.svg" alt="ロゴ画像" class="footer-logo "></a>
+      </div>
+      <div class="footer-title item">
+        <h2>タイトル</h2>
+        <ul>
+          <li>テキストテキストテキスト</li>
+          <li>テキストテキストテキスト</li>
+          <li>テキストテキストテキスト</li>
+          <li>テキストテキストテキスト</li>
+          <li>テキストテキストテキスト</li>
+        </ul>
+      </div>
+      <div class="footer-subtitle item">
+        <h2>タイトルタイトルタイトル</h2>
+        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      </div>
+    </footer>
+    <div id="footer-logo">@ Mag88</div>
+
+  </body>
+</html>
